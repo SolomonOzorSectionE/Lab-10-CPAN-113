@@ -28,10 +28,17 @@ class Product {
 
 // Testing the Product class
 const product1 = new Product("Apple", 2.5, 50);
+const salmon = new Product("Salmon", 15.0, 20);
+const peanut_butter = new Product("Peanut Butter", 3.0, 15);
 
 console.log(product1.toString());
 console.log("Total Value:", product1.getTotalValue());
 
+console.log(salmon.toString());
+console.log("Total Value:", salmon.getTotalValue());
+
+console.log(peanut_butter.toString());
+console.log("Total Value:", peanut_butter.getTotalValue());
 
 
 // PART 2: ADDING INHERITANCE
