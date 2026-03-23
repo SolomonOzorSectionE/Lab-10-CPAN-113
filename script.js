@@ -1,3 +1,5 @@
+//this lab is to for using classes, inheritance, static methods, and arrays and to manage store products and calculate inventory values.
+
 // PART 1: SETTING UP CLASSES
 class Product {
   // Constructor to initialize properties
