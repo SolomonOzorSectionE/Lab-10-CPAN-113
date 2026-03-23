@@ -137,6 +137,7 @@ console.log("Total inventory value after 15% discount:", store.getInventoryValue
 
 const foundProduct = store.findProductByName("Milk");
 
+console.log("=== STORE SEARCH RESULT ===");
 if (foundProduct) {
   console.log("Product found:");
   console.log(foundProduct.toString());
