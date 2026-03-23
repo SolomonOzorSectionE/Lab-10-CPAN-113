@@ -16,6 +16,14 @@ class Product {
   toString() {
     return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
   }
+
+     // Part 3: Static method to apply discount to all products
+  static applyDiscount(products, discount) {
+    for (let product of products) {
+      product.price = product.price - (product.price * discount);
+    }
+  }
+  
 }
 
 // Testing the Product class
