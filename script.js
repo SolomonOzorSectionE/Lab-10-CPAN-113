@@ -14,7 +14,7 @@ class Product {
 
   // Method to return a string representation of the product
   toString() {
-    return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
+return `Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}`;
   }
 
      // Part 3: Static method to apply discount to all products
@@ -53,7 +53,7 @@ class PerishableProduct extends Product {
 
   // Override toString method to include expiration date
   toString() {
-    return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
+return `Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
   }
 }
 
