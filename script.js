@@ -67,7 +67,7 @@ console.log(bread.toString());
 
 // PART 3: STATIC METHODS AND PROPERTIES
 // Testing the static discount method
-const allProducts = [product1, milk, bread];
+const allProducts = [product1, milk, bread, salmon, peanut_butter];
 
 console.log("Before discount:");
 for (let product of allProducts) {
