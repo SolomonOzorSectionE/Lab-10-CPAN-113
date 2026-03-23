@@ -56,3 +56,20 @@ const bread = new PerishableProduct("Bread", 3.0, 15, "2024-12-30");
 
 console.log(milk.toString());
 console.log(bread.toString());
+
+
+// PART 3: STATIC METHODS AND PROPERTIES
+// Testing the static discount method
+const allProducts = [product1, milk, bread];
+
+console.log("Before discount:");
+for (let product of allProducts) {
+  console.log(product.toString());
+}
+
+Product.applyDiscount(allProducts, 0.1);
+
+console.log("Discount applied:");
+for (let product of allProducts) {
+  console.log(product.toString());
+}
