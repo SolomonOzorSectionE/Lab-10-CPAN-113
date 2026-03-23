@@ -31,6 +31,7 @@ const product1 = new Product("Apple", 2.5, 50);
 const salmon = new Product("Salmon", 15.0, 20);
 const peanut_butter = new Product("Peanut Butter", 3.0, 15);
 
+console.log("=== PRODUCT CLASS TESTS ===");
 console.log(product1.toString());
 console.log("Total Value:", product1.getTotalValue());
 
