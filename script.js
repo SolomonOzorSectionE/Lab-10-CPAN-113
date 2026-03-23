@@ -41,3 +41,10 @@ class PerishableProduct extends Product {
     return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}, Expiration Date: ${this.expirationDate}`;
   }
 }
+
+// Testing the PerishableProduct class
+const milk = new PerishableProduct("Milk", 1.5, 10, "2024-12-31");
+const bread = new PerishableProduct("Bread", 3.0, 15, "2024-12-30");
+
+console.log(milk.toString());
+console.log(bread.toString());
