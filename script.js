@@ -17,3 +17,9 @@ class Product {
     return `Product: ${this.name}, Price: $${this.price}, Quantity: ${this.quantity}`;
   }
 }
+
+// Testing the Product class
+const product1 = new Product("Apple", 2.5, 50);
+
+console.log(product1.toString());
+console.log("Total Value:", product1.getTotalValue());
