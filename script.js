@@ -124,7 +124,20 @@ const store = new Store();
 store.addProduct(product1);
 store.addProduct(milk);
 store.addProduct(bread);
+store.addProduct(salmon);
+store.addProduct(peanut_butter);
 
-console.log("Total Inventory Value:", store.getInventoryValue());
-console.log("Found Product:", store.findProductByName("bread"));
-console.log("Missing Product:", store.findProductByName("Banana"));
+console.log("Total inventory value before discount:", store.getInventoryValue());
+
+Product.applyDiscount(store.inventory, 0.15);
+
+console.log("Total inventory value after 15% discount:", store.getInventoryValue());
+
+const foundProduct = store.findProductByName("Milk");
+
+if (foundProduct) {
+  console.log("Product found:");
+  console.log(foundProduct.toString());
+} else {
+  console.log("Product not found.");
+}
