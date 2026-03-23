@@ -109,3 +109,15 @@ class Store {
     return null;
   }
 }
+
+
+// Testing the Store class
+const store = new Store();
+
+store.addProduct(product1);
+store.addProduct(milk);
+store.addProduct(bread);
+
+console.log("Total Inventory Value:", store.getInventoryValue());
+console.log("Found Product:", store.findProductByName("bread"));
+console.log("Missing Product:", store.findProductByName("Banana"));
