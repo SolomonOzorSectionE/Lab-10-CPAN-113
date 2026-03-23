@@ -73,3 +73,39 @@ console.log("Discount applied:");
 for (let product of allProducts) {
   console.log(product.toString());
 }
+
+
+
+// PART 4: STORE MANAGEMENT
+class Store {
+  constructor() {
+    this.inventory = [];
+  }
+
+  // Adds a product to the inventory
+  addProduct(product) {
+    this.inventory.push(product);
+  }
+
+  // Return total value of all products in the inventory
+  getInventoryValue() {
+    let total = 0;
+
+    for (let product of this.inventory) {
+      total += product.getTotalValue();
+    }
+
+    return total;
+  }
+
+  // Find product by name and returns it, or null if not found
+  findProductByName(name) {
+    for (let product of this.inventory) {
+      if (product.name.toLowerCase() === name.toLowerCase()) {
+        return product;
+      }
+    }
+
+    return null;
+  }
+}
